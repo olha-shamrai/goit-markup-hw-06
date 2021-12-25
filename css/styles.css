@@ -517,6 +517,8 @@ header .container {
     color: var(--main-text-color);
 }
 
+
+
 .footer {
     background-color: var(--background-accent-color);
     padding: 60px 0;
@@ -571,8 +573,7 @@ header .container {
 
 .subscribe-form {
     display: flex;
-    justify-content: ;
-    align-items: baseline;
+    flex-direction: column;
 }
 
 .subscribe-input {
@@ -592,6 +593,8 @@ header .container {
     align-items: center;
     width: 200px;
     height: 50px;
+    cursor: pointer;
+    font-family: inherit;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -602,6 +605,15 @@ header .container {
     letter-spacing: 0.06em;
     color: var(--background-main-color);
     margin-left: 12px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: #188CE8;
 }
 
 .subscribe-icon {
@@ -648,6 +660,8 @@ header .container {
     background-color: var(--background-main-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    padding: 40px;
 }
 
 .close {
@@ -668,4 +682,17 @@ header .container {
     width: 11px;
     height: 11px;
     fill: #000000;
+}
+
+.close:hover .close-icon,
+.close:focus .close-icon {
+    fill: var(--accent-color);
+}
+
+.form-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
 }

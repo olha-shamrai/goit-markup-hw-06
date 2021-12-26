@@ -811,8 +811,8 @@ header .container {
 
 .checkbox {
     position: absolute;
-    top: 3.5px;
-    left: 12.5px;
+    top: 3px;
+    left: 12px;
     width: 16px;
     height: 15px;
     
@@ -834,8 +834,8 @@ header .container {
 
 .checkbox-icon {
     position: absolute;
-    top: 3.5px;
-    left: 12.5px;
+    top: 3px;
+    left: 12px;
     opacity: 0;
     pointer-events: none;
     
